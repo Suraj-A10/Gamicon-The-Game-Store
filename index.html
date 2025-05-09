@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamicon-the game store</title>
+    <link rel="stylesheet" href="navebar.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="catogary.css">
+    <link rel="stylesheet" href="basedon.css">
+    <link rel="stylesheet" href="top10.css">
+    <link rel="stylesheet" href="searchbox.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="catogary.js"></script>
+    <script src="searchbox.js"></script>
+    <!-- <script src="basedon.js"></script> -->
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+</head>
+<body>
+
+<!-- no purpose for this page only for github view -->
+
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="left">
+        <img src="./IMG/LOGO.jpg" alt="Logo" class="logo" style="margin-left: 10px;">
+        <span class="divider"></span>
+    </div>
+
+    <div class="center">
+        <a href="#">Game Pass <i class="fas fa-chevron-down"></i></a>
+
+        <!-- Games Dropdown -->`
+        <div class="dropdown d-inline">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Games</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">PC Games</a></li>
+                <li><a class="dropdown-item" href="#">Console Games</a></li>
+                <li><a class="dropdown-item" href="#">Cloud Gaming</a></li>
+                <li><a class="dropdown-item" href="#">New Releases</a></li>
+            </ul>
+        </div>
+
+        <a href="#">Library <i class="bi bi-chevron-down"></i></a>
+        <a href="#">Store <i class="bi bi-chevron-down"></i></a>
+        <a href="#">Community <i class="bi bi-chevron-down"></i></a>
+        <a href="#">Wallet <i class="bi bi-chevron-down"></i></a>
+        <a href="#">Developers <i class="bi bi-chevron-down"></i></a>
+    </div>
+
+    <div class="right">
+        <!-- Search box -->
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search for a game...">
+          <i class="bi bi-search"></i>
+          <ul id="suggestionList" class="suggestion-list"></ul>
+        </div>
+
+        <!-- Cart Icon with Count -->
+         <!-- <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count"></span>
+        </div> -->
+
+        <img src="./IMG/MYPIC.jpeg" alt="User Profile" class="profile-icon" style="margin-right:10px;">
+    </div>
+</nav>
+    <!-- carousel -->
+    <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true" data-bs-interval="2000" >
+        <div class="carousel-inner">
+    
+          <!-- Slide 1 -->
+          <div class="carousel-item active position-relative">
+            <img src="./IMG/acshadow.jpg" class="d-block w-100 carousel-img" alt="Assassin's Creed Shadows">
+            <div class="carousel-caption text-start">
+              <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-3 d-inline-block">NOW AVAILABLE</span>
+              <h1 class="fw-bold">Assassin's Creed Shadows</h1>
+              <p>Become a ninja assassin and a legendary samurai in feudal Japan</p>
+              <a href="" class="btn btn-success fw-bold px-4 py-2">GET IT NOW</a>
+            </div>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="carousel-item position-relative">
+            <img src="./IMG/blackops6.jpg" class="d-block w-100 carousel-img" alt="Another Game">
+            <div class="carousel-caption text-start">
+              <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-3 d-inline-block">NEW RELEASE</span>
+              <h1 class="fw-bold">Call of duty blackops6</h1>
+              <p>Join the battle and explore new worlds like never before</p>
+              <a href="" class="btn btn-success fw-bold px-4 py-2">PLAY NOW</a>
+            </div>
+          </div>
+          
+           <!-- Slide 3 -->
+          <div class="carousel-item position-relative">
+            <img src="./IMG/ufc 5.jpg" class="d-block w-100 carousel-img" alt="Another Game">
+            <div class="carousel-caption text-start">
+              <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-3 d-inline-block">NEW RELEASE</span>
+              <h1 class="fw-bold">UFC 5</h1>
+              <p>Join the battle and explore new worlds like never before</p>
+              <a href="" class="btn btn-success fw-bold px-4 py-2">PLAY NOW</a>
+            </div>
+          </div>
+
+           <!-- Slide  4-->
+          <div class="carousel-item position-relative">
+            <img src="./IMG/game4.jpg" class="d-block w-100 carousel-img" alt="Another Game">
+            <div class="carousel-caption text-start">
+              <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-3 d-inline-block">NEW RELEASE</span>
+              <h1 class="fw-bold">Fighting Ops</h1>
+              <p>Join the battle and explore new worlds like never before</p>
+              <a href="" class="btn btn-success fw-bold px-4 py-2">PLAY NOW</a>
+            </div>
+          </div>
+    
+          <!-- You can add more slides here -->
+    
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+    
+        <!-- Dots indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="3"></button>
+          <!-- Add more dots if you add more slides -->
+        </div>
+      </div>
+
+      <!-- icon -->
+       <style>
+        .icon{
+          height: 50px;
+          width: auto;
+        }
+        
+       </style>
+      <section class="container my-5 ">
+        <div class="row text-center justify-content-center mr-4">
+          <div class="col-4 col-md-2 ">
+            <img src="./IMG/gamepass.svg" class="img-fluid icon" alt="Game Pass">
+            <p class="fw-bold text-success mt-2"> <a href="gamepass.php" style="text-decoration: none; color:green"  >GAME PASS</a></p>
+          </div>
+          <div class="col-4 col-md-2 ">
+            <img src="./IMG/game.svg" class="img-fluid icon" alt="Games">
+            <p class="fw-bold text-success mt-2"><a href="#category" style="text-decoration: none; color:green">GAMES</a></p>
+          </div>
+          <div class="col-4 col-md-2 ">
+            <img src="./IMG/console.svg" class="img-fluid icon" alt="Consoles">
+            <p class="fw-bold text-success mt-2">CONSOLES</p>
+          </div>
+          <div class="col-4 col-md-2 ">
+            <img src="./IMG/ACCOSARIES.svg" class="img-fluid icon" alt="Accessories">
+            <p class="fw-bold text-success mt-2">ACCESSORIES</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./IMG/DEALS.svg" class="img-fluid icon" alt="Deals">
+            <p class="fw-bold text-success mt-2">DEALS</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./IMG/account.svg" class="img-fluid icon" alt="My Account">
+            <p class="fw-bold text-success mt-2">MY ACCOUNT</p>
+          </div>
+        </div>
+      </section>
+      <div class="video-container">
+        <video autoplay loop muted class="styled-video">
+            <source src="./IMG/blackopvideeeo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- catogary byised -->
+     <section id="category">
+    <div class="container my-5">
+      
+      <h4 >BROWSE BY CATEGORY</h4>
+      <div class="row g-3">
+        <div class="col-md-3" onclick="showGames('anime')">
+          <div class="category-card" style="background-image: url('./IMG/anime.webp')">
+            <div class="overlay"><h5>OPEN WORLD</h5></div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="showGames('free')">
+          <div class="category-card" style="background-image: url('./IMG/freetoplay.webp')">
+            <div class="overlay"><h5>FREE TO PLAY</h5></div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="showGames('casual')">
+          <div class="category-card" style="background-image: url('./IMG/casual.webp')">
+            <div class="overlay"><h5>CASUAL</h5></div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="showGames('openworld')">
+          <div class="category-card" style="background-image: url('./IMG/exploration_open_world.webp')">
+            <div class="overlay"><h5>STORY RICH</h5></div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="game-sections" class="mt-5">
+        <!-- Games appear here -->
+      </div>
+    </div>
+  </section>
+  <div class="top10-container">
+    <div class="section-title">Top 10 Games in India Today</div>
+  
+    <div class="scroll-row">
+      <!-- Game 1 -->
+      <div class="game-item">
+        <div class="big-number">1</div><a href="blackops6.php"><img src="./IMG/gameimg/gta6.jpg" alt="Game 1" class="game-poster"></a>
+  
+        <div class="tag">Recently added</div>
+      </div>
+  
+      <!-- Game 2 -->
+      <div class="game-item">
+        <div class="big-number">2</div>
+        <img src="./IMG/gameimg/rdr.jpg" alt="Game 2" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+  
+      <!-- Game 3 -->
+      <div class="game-item">
+        <div class="big-number">3</div>
+        <img src="./IMG/gameimg/GOD.jpg" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+
+      <div class="game-item">
+        <div class="big-number">4</div>
+        <img src="./IMG/gameimg/EA_FC25_Standard_KeyArt_16-9_3840x2160_Hypermotion.png" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number">5</div>
+        <img src="./IMG/gameimg/assisn.jpeg" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number">6</div>
+        <img src="./IMG/gameimg/last of us.jpg" alt="Game 3" class="game-poster mr-4">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number">7</div>
+        <img src="./IMG/gameimg/pubg3.jpg" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number">8</div>
+        <img src="./IMG/gameimg/watch-dogs-iphone-8cc73ealru11dr8c.jpg" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number">9</div>
+        <img src="./IMG/gameimg/pexels-pixabay-264146.jpg" alt="Game 3" class="game-poster">
+        <div class="tag">Recently added</div>
+      </div>
+      <div class="game-item">
+        <div class="big-number10">10</div>
+        <img src="IMG/gameimg/zombie-warrior-android-gaming-25bgfqyp6urmcza8.jpg" alt="Game 3" class="game-poster10">
+        <div class="tag10">Recently added</div>
+      </div>
+  
+      <!-- Add more game items up to 10 -->
+    </div>
+  </div>
+    <!-- based on -->
+    <div class="carousel-container1">
+      <div class="carousel-title1">RECOMMENDED BASED ON THE GAMES YOU PLAY</div>
+      
+      <div class="carousel-wrapper1">
+        
+        <div class="game-carousel1" id="carousel1">
+          <div class="game-card1">
+            <img src="./IMG/gameimg/1god-of-war-ragnarok.jpg" alt="God of War Ragnarok">
+            <div class="price-tag1">₹ 4499</div>
+            <a href="godofwar.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          
+          <div class="game-card1">
+            <img src="./IMG/gameimg/ghost.webp" alt="Ghost of Tsushima">
+            <div class="price-tag1">₹ 3999</div>
+            <a href="ghostoftsushima.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/ready.jpg" alt="Ready or Not">
+            <div class="price-tag1">₹ 3999</div>
+            <a href="readyornot.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/last thumb.jpg" alt="The Last of Us">
+            <div class="price-tag1">₹ 1,999</div>
+            <a href="lastofus.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/far cry 4.jpg" alt="Far Cry 4">
+            <div class="price-tag1">₹ 2,009</div>
+            <a href="farcry4.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/JUST CAUSE.jpg" alt="Just Cause">
+            <div class="price-tag1">₹ 899</div>
+            <a href="justcause.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/yotei1.jpg" alt="Yotei">
+            <div class="price-tag1">₹ 1,999</div>
+            <a href="yotei.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/pubg thumb.jpg" alt="PUBG">
+            <div class="price-tag1">Free</div>
+            <a href="pubg.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <div class="game-card1">
+            <img src="./IMG/gameimg/rider.jpg" alt="Riders Republic">
+            <div class="price-tag1">₹ 1,999</div>
+            <a href="ridersrepublic.php" class="btn install-btn px-4 py-2" style="margin-top:10px;margin-left:200px;">Proceed</a>
+          </div>
+          <!-- Add more game cards as needed -->
+        </div>
+      
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="custom-footer">
+
+      <!-- Red Top Section -->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="label">Year Founded</div>
+              <h2>2025</h2>
+            </div>
+            <div class="col-md-6 text-md-end mt-4 mt-md-0">
+              <div class="label">Location</div>
+              <h2>Phagwara Punjab</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <strong>Get in touch</strong><br>
+              <a href="mailto:business@pizzapizza.io">rishu@12220355.lpu.in</a><br>
+              <a href="mailto:hello@pizzapizza.io">gamingisnotacrime56@gmail.com</a>
+            </div>
+            <div class="col-md-3">
+              <strong>Connect</strong><br>
+              <a href="#">LinkedIn</a><br>
+              <a href="#">Instagram</a>
+            </div>
+            <div class="col-md-3">
+              <strong>Toll Free Number</strong>
+              <p>18000 52526<br>17000 12345<br>90000 98745</p>
+            </div>
+            <div class="col-md-3">
+              <strong>Address</strong>
+              <p>Madhubani<br>Bihar<br>847236 India</p>
+            </div>
+          </div>
+    
+          
+    
+          <div class="text-center">
+            <small>Design by Rishu<br>© 2025 &nbsp; Data Privacy &nbsp; Gamicon</small>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+ 
+        
+   </body>
+</html>
