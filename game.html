@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Details</title>
+</head>
+<body>
+  <h1 id="gameTitle"></h1>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const gameId = urlParams.get('id');
+
+      const games = {
+        1: "Call of Duty",
+        2: "Minecraft",
+        3: "Fortnite",
+        4: "FIFA 23",
+        5: "Valorant",
+        6: "Need for Speed"
+      };
+
+      const gameTitle = games[gameId] || "Game Not Found";
+      document.getElementById("gameTitle").innerText = gameTitle;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+#custom-footer {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+
+  #custom-footer .footer-top {
+    background-color: #606c38;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 60px 40px 50px;
+    margin-bottom: 0;
+  }
+
+  #custom-footer .footer-top .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid #000;
+    padding: 2px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  #custom-footer .footer-top h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #custom-footer .footer-bottom {
+    padding: 60px 40px 30px;
+    background-color: #111;
+  }
+
+  #custom-footer a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  #custom-footer a:hover {
+    text-decoration: underline;
+  }
+
+  #custom-footer .footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 6px;
+  }
+
+  #custom-footer .footer-bottom strong {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #custom-footer .footer-nav {
+    margin-top: 50px;
+  }
+
+  #custom-footer .footer-nav a {
+    padding: 8px 22px;
+    border-radius: 24px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  #custom-footer .footer-nav a.active {
+    background-color: black;
+    color: white;
+  }
+
+  #custom-footer small {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 40px;
+  }
+
+  /* Responsive tweaks */
+  @media(max-width: 767px) {
+    #custom-footer .footer-top h2 {
+      font-size: 36px;
+    }
+
+    #custom-footer .footer-top {
+      text-align: center;
+    }
+
+    #custom-footer .footer-bottom .row > div {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #custom-footer .footer-nav a {
+      display: block;
+      margin: 10px auto;
+    }
+  }

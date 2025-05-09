@@ -1,0 +1,23 @@
+.carousel-img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    position: absolute;
+  }
+  
+  .carousel-caption h1,
+  .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  }
+
+  

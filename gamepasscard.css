@@ -1,0 +1,41 @@
+.subscription-card {
+    border: 1px solid green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.2); /* Soft greenish shadow */
+  }
+  .plan-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .price-text {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .join-btn {
+    background-color: #c1f006;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  .feature-list {
+    text-align: left;
+    margin-top: 15px;
+  }
+  .feature-list li {
+    margin-bottom: 10px;
+  }
+  .terms {
+    font-style: italic;
+  }
+  .highlight {
+    color: green;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  #paymentherf{
+    background-color: #c1f006;
+    font-weight: bold;
+    margin: 15px 0;
+  }

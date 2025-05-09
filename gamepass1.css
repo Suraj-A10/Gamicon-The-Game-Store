@@ -1,0 +1,44 @@
+.game-pass-section {
+    background: url('./IMG/gamepassthumb.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 100px 50px;
+  }
+
+  .highlight {
+   
+    color: #0e0e0e;
+    font-weight: bold;
+    padding: 0px 5px 5px 3px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+ 
+  .highlight:hover {
+    background-color: #8be000;
+  }
+
+  a.terms-link {
+    color: #a4ff00;
+    text-decoration: none;
+  }
+
+  a.terms-link:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .top10-container {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .scroll-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    scroll-behavior: smooth;
+
+  }
+
+  .scroll-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .game-item {
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .big-number {
+    font-size: 200px;
+    font-weight: bold;
+    color: #a33f49;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 0;
+    line-height: 0.8;
+  }
+  .big-number10 {
+    font-size: 200px;
+    font-weight: bold;
+    color: #a33f49;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 0;
+    line-height: 0.8;
+  }
+
+  .game-poster {
+    width: 150px;
+    height: 220px;
+    border-radius: 6px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    margin-inline-start: 62px;
+
+  }
+  .game-poster10 {
+    width: 150px;
+    height: 220px;
+    border-radius: 6px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    margin-inline-start: 155px;
+
+  }
+
+  .tag {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 4px;
+    z-index: 3;
+    margin-inline-start: 50px;
+  }
+  .tag10 {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 4px;
+    z-index: 3;
+    margin-inline-start: 140px;
+  }
